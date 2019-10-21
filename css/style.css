@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&display=swap");
+
+input {
+	font-size: 1.2em;
+	font-weight: 400;
+	font-family: "Ubuntu Mono", monospace;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 1.2em;
+	font-weight: 400;
+	font-family: "Ubuntu Mono", monospace;
+	background-color: #250c1f;
+}
+
+.console * {
+	overflow-anchor: none;
+}
+
+.action {
+	overflow-anchor: auto;
+}
+
+.console {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.console .output {
+	width: 100%;
+	color: #fff;
+	font-size: 1.2em;
+	font-family: "Ubuntu Mono", monospace;
+}
+
+.console .user .username {
+	font-weight: 700;
+}
+
+.console .user .colon {
+	margin: 0 0.1em 0 0.1em;
+}
+
+.console .user .tilde {
+	font-weight: 700;
+}
+
+.console .output span {
+	line-height: 20px;
+}
+
+.console .white {
+	color: #fff;
+}
+
+.console .green {
+	color: #76a338;
+}
+
+.console .red {
+	color: #e74c3c;
+}
+
+.console .blue {
+	color: #58809e;
+}
+
+.console .action {
+	width: 100%;
+}
+
+.console .action .user {
+	float: left;
+	color: white;
+	font-size: 1.2em;
+}
+
+.console .action input {
+	background: none;
+	border: none;
+	color: white;
+	padding: 0;
+	margin: 0;
+	width: inherit;
+	position: absolute;
+	max-width: 80%;
+}
+
+.console .action .input:focus {
+	outline: none;
+}
+
+.console .tabbed {
+	left: 5em;
+	position: relative;
+}
+
+input {
+	border-right: 1px solid;
+}
+
+input:focus {
+	animation: PulseAttention 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) forwards
+		infinite;
+}
+
+@keyframes PulseAttention {
+	50% {
+		border-color: red;
+	}
+}
